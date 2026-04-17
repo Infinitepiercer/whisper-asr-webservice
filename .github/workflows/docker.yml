@@ -10,7 +10,19 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-
+      
+      - name: Free up disk space
+        run: sudo rm -rf /usr/share/dotnet
+        
+      - name: Free up disk space
+        run: sudo rm -rf /opt/ghc
+        
+      - name: Free up disk space
+        run: sudo rm -rf "/usr/local/share/boost"
+        
+      - name: Free up disk space
+        run: sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+        
       - name: DockerHub Login
         uses: docker/login-action@v2.1.0
         with:
