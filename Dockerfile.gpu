@@ -50,7 +50,7 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get update && apt-get install -y ffmpeg && rm -rf /var/lib/apt/lists/*
 
 RUN poetry config virtualenvs.in-project true
-RUN poetry lock --no-update
+RUN poetry lock
 RUN poetry install --extras cuda
 
 EXPOSE 9000
