@@ -37,6 +37,7 @@ COPY --from=swagger-ui /usr/share/nginx/html/swagger-ui.css swagger-ui-assets/sw
 COPY --from=swagger-ui /usr/share/nginx/html/swagger-ui-bundle.js swagger-ui-assets/swagger-ui-bundle.js
 
 RUN apt-get update && apt-get install -y \
+    build-essential \
     pkg-config \
     libavformat-dev \
     libavcodec-dev \
