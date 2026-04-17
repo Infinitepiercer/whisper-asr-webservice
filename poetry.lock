@@ -4532,7 +4532,7 @@ optree = ["optree (>=0.13.0)"]
 
 [package.source]
 type = "legacy"
-url = "https://download.pytorch.org/whl/cu126"
+url = "https://download.pytorch.org/whl/cu130"
 reference = "pytorch-cuda"
 
 [[package]]
