@@ -16,7 +16,7 @@ RUN export DEBIAN_FRONTEND=noninteractive \
     python${PYTHON_VERSION} \
     python${PYTHON_VERSION}-venv \
     python3-pip \
-    libcudnn8 \
+    libcudnn9.21.0 \
     python3-pip \
     && rm -rf /var/lib/apt/lists/*
 
